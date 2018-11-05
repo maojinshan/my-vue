@@ -1,0 +1,296 @@
+@import "reset.scss", "var.scss", "element-variables.scss", "../iconfont/iconfont.css";
+/**********************页面框架样式start*********************************/
+.el-scrollbar{
+  width: 100%;
+  height: 100%;
+}
+.el-header{
+  // line-height: 50px;
+  // padding: 0;
+}
+.header{
+  line-height: 60px;
+  padding: 0 20px;
+  background-color: #505f83;
+  a{
+    font-size: 20px;
+    color: #FFF;
+  }
+}
+.el-aside {
+  height: calc(100vh - 60px);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  background-color: #28324a;
+  overflow: hidden;
+}
+.el-main{
+  padding: 0 20px 20px 20px;
+}
+.el-scrollbar__wrap{
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.el-menu {
+  border-right: none;
+  background-color: transparent;
+}
+.el-menu-item{
+  color: #FFF;
+  &:hover{
+    background-color: rgb(32, 40, 59);
+  }
+}
+.el-submenu__title{
+  height: 35px;
+  line-height: 35px;
+  padding-left: 10px!important;
+  margin: 5px 0;
+  color: #FFF;
+  &:hover{
+    color:#FFF;
+    background-color: rgb(32, 40, 59);
+  }
+}
+.el-submenu .el-menu-item {
+  min-width: 200px;
+  height: 35px;
+  line-height: 35px;
+  color:rgb(146, 151, 164);
+  border-left: 5px solid transparent;
+  &.is-active{
+    border-left-color: #84A1E5;
+    background-color: #20283b;
+    color:#FFF;
+  }
+}
+
+
+// table
+.el-table th{
+  background-color: #f2f3f7;
+}
+.iconfont {
+  margin-right: 5px;
+}
+/***********************页面框架样式end****************************/
+
+#app {
+  height: 100%;
+  overflow: hidden;
+}
+.main-cnt{
+  height: 100%;
+}
+
+.chart{
+  width: 100%!important;
+}
+.tpl-mg-t {  margin-top: $sp;  }
+.tpl-mg-b {  margin-bottom: $sp;  }
+.tpl-mg {  margin: $sp 0;  }
+.tpl-mg-clear {  margin: 0;  }
+.tpl-pd-t {  padding-top: $sp;  }
+.tpl-pd-b {  padding-bottom: $sp;  }
+.tpl-pd {  padding: $sp 0;  }
+.tpl-pd-clear {  padding: 0;  }
+
+.tpl-title {
+  font-size: 14px;
+  margin: 0;
+  font-weight: bolder;
+  padding: $sp 0;
+  border-bottom: 1px solid $border-color;
+}
+.tpl-form-inline {
+}
+
+.tpl-p {
+  display: inline-block;
+  color: #5E6D82;
+  line-height: 1.5;
+  padding: 5px 14px;
+}
+
+.tpl-word-break-normal {
+  word-break: normal;
+}
+
+
+/*通用样式*/
+
+.width-full{
+  width: 100%;
+}
+.flex{
+  display: flex;
+}
+.flex1{
+  flex: 1;
+}
+/*水平主轴 左到右*/
+.flex-row{
+  flex: 1;
+  flex-direction: row;
+}
+/*垂直主轴 上到下*/
+.flex-col{
+  flex: 1;
+  flex-direction: column;
+}
+/*超过宽度换行*/
+.flex-wrap{
+  flex-wrap: wrap;
+}
+/*水平居中*/
+.flex-jc-center{
+  justify-content: center;
+}
+/*垂直居中*/
+.flex-ai-center{
+  align-items: center;
+}
+/*水平垂直居中*/
+.flex-center{
+  justify-content: center;
+  align-items: center;
+}
+.ib{
+  display: inline-block;
+}
+.pa { position: absolute; }
+.pr { position: relative; }
+.fl { float: left; }
+.fr { float: right; }
+.lh30 { line-height: 30px; }
+.ib { display: inline-block; }
+.nowrap { white-space: nowrap; }
+.tlc {text-align: center; }
+.fs12 { font-size: 12px !important; }
+.fs14 { font-size: 14px !important; }
+.fs16 { font-size: 16px !important; }
+.fs24 { font-size: 24px !important; }
+.wh720 { width: 720px; }
+.wh640 { width: 640px; }
+.wh540 { width: 540px !important; }
+.wh535 { width: 535px; }
+.wh440 { width: 440px; }
+.wh350 { width: 350px !important; }
+.wh300 { width: 300px; }
+.wh290 { width: 290px; }
+.wh280 { width: 280px; }
+.wh260 { width: 260px; }
+.wh240 { width: 240px; }
+.wh200 { width: 200px; }
+.wh182 { width: 182px; }
+.wh168 { width: 168px; }
+.wh150 {width: 150px;}
+.wh120 { width: 120px; }
+.wh100 { width: 100px !important; }
+.wh90 { width: 90px !important; }
+.wh80 { width: 80px; }
+.wh70 { width: 70px !important; }
+.wh60 { width: 60px; }
+.wh30 { width: 30px; }
+.ht300 { height: 300px; }
+.ht104 { height: 104px; }
+.ht60 { height: 60px; }
+.ht40 { height: 40px; }
+.ht32 { height: 32px; }
+.ht20 { height: 20px; }
+.size40 { width: 40px; height: 40px; }
+.size46 { height: 46px; width: 46px; }
+.mt18 { margin-top: 18px; }
+.mt20 { margin-top: 20px; }
+.mt30 { margin-top: 30px; }
+.mt50 { margin-top: 50px; }
+.mt18 { margin-top: 18px; }
+.mt16 { margin-top: 16px !important; }
+.mt5 { margin-top: 5px !important; }
+.mt4 { margin-top: 4px; }
+.mt7 { margin-top: 7px; }
+.mt10 { margin-top: 10px; }
+.mt14 { margin-top: 14px; }
+.mt0 {margin-top: 0;}
+.mt-10 {margin-top: -10px; }
+.ml5 { margin-left: 5px; }
+.ml10 { margin-left: 10px; }
+.ml15 { margin-left: 15px; }
+.ml20 { margin-left: 20px; }
+.ml37 { margin-left: 37px; }
+.ml45 { margin-left: 45px; }
+.ml50 { margin-left: 50px; }
+.ml-11 {margin-left: -11px; }
+.ml-12 {margin-left: -12px; }
+.ml-16 { margin-left: -16px;}
+.ml-20 { margin-left: -20px !important;}
+.ml-24 { margin-left: -24px;}
+.mr3 {margin-right: 3px; }
+.mr5 { margin-right: 5px !important; }
+.mr10 { margin-right: 10px; }
+.mr14 { margin-right: 14px !important; }
+.mr20 { margin-right: 20px; }
+.mr24 { margin-right: 24px; }
+.mb0 { margin-bottom: 0 !important; }
+.mb8 { margin-bottom: 8px;}
+.mb13 { margin-bottom: 13px !important;}
+.mb16 { margin-bottom: 16px !important;}
+.mb10 { margin-bottom: 10px !important; }
+.mb20 { margin-bottom: 20px !important; }
+.mb30 { margin-bottom: 30px !important; }
+.mb40 { margin-bottom: 40px !important; }
+.mb50 { margin-bottom: 50px !important; }
+
+.pd5 { padding: 5px; }
+.pd10 { padding: 10px !important; }
+.pd20 { padding: 20px; }
+.pdt0 { padding-top: 0 !important; }
+.pdt5 { padding-top: 5px; }
+.pdl0 {padding-left:0;}
+.pdl70 { padding-left: 70px; }
+.pdl80 { padding-left: 80px; }
+.pdl90 { padding-left: 90px; }
+.pb0 { padding-bottom: 0; }
+.pb5 { padding-bottom: 5px; }
+.pb10 { padding-bottom: 10px; }
+.pb20 { padding-bottom: 20px; }
+.pb30 { padding-bottom: 30px; }
+.pb50 { padding-bottom: 50px; }
+
+//element-ui样式
+
+.body-main{
+  background-color: $color-body-main;
+  padding: 20px !important;
+  font-size:12px;
+  .el-table td,.el-table th,
+  .el-form .el-form-item label,
+  .el-form input,
+  span{
+      font-size:12px;
+  }
+}
+.main-header{
+  background-color: $color-body-header;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.el-select-dropdown__item span{
+  font-size:12px;
+}
+.el-card__body{
+  padding:15px 20px;
+}
+.el-date-editor--datetimerange.el-input, .el-date-editor--datetimerange.el-input__inner{
+  width:350px;
+}
+.el-table td, .el-table th{
+  padding:5px;
+}
+.el-table .cell{
+  padding-left: 0;
+  padding-right:0;
+}

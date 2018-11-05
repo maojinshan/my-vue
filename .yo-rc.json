@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "毛金山",
+      "authorEmail": "maojs@mapbar.com",
+      "authorUrl": "https://maojinshan.github.io"
+    }
+  }
+}
